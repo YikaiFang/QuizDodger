@@ -30,6 +30,7 @@ import GameScreen from './screens/GameScreen';
 import LoseScreen from './screens/LoseScreen';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Player from './components/Player';
 
 function App() {
   // Initialize with 'home' to test the HomeScreen first
@@ -54,9 +55,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/GameScreen" element={<GameScreen />} />
-
           {/* You can add more routes here for other pages */}
         </Routes>
+        <Player /> {Player(600, 600)}
       </Router>
     </div>
   );
