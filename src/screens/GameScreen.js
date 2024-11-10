@@ -1,8 +1,13 @@
-// HomeScreen.js
+// GameScreen.js
 import React from 'react';
 
-function HomeScreen() {
-  return <h1>Welcome to Quiz Dodger!</h1>;
-}
+const GameScreen = () => {
+  return (
+    <div>
+      <h1>Welcome to the Play Screen!</h1>
+      <p>Here is where the game starts.</p>
+    </div>
+  );
+};
 
-export default HomeScreen;
+export default GameScreen;
