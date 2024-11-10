@@ -6,20 +6,14 @@ const questions = [
     },
     {
       question: "What is the largest country in Africa?",
-      options: ["3", "4", "5", "6"],
-      answer: "4"
+      options: ["Morroco", "Egypt", "Algeria", "South Africa"],
+      answer: "Algeria"
     },
     {
-      question: "What is the largest planet in our solar system?",
-      options: ["Earth", "Jupiter", "Mars", "Saturn"],
-      answer: "Jupiter"
+      question: "Where is the Okavango Delta located?",
+      options: ["Botswana", "United States", "Thailand", "Serbia"],
+      answer: "Botswana"
     },
-    {
-      question: "Who wrote 'Hamlet'?",
-      options: ["Charles Dickens", "Mark Twain", "William Shakespeare", "J.K. Rowling"],
-      answer: "William Shakespeare"
-    },
-    // Add as many questions as you like
   ];
   
   export default questions;
