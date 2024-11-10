@@ -54,7 +54,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/GameScreen" element={<GameScreen />} />
-
+          <Route path="/LoseScreen" element={<LoseScreen />} />
           {/* You can add more routes here for other pages */}
         </Routes>
       </Router>
