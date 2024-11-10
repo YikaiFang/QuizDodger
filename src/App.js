@@ -58,7 +58,6 @@ function App() {
           <Route path="/LoseScreen" element={<LoseScreen />} />
           {/* You can add more routes here for other pages */}
         </Routes>
-        <Player /> {Player()}
       </Router>
     </div>
   );
