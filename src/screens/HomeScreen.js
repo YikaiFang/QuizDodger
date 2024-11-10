@@ -10,9 +10,11 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <h1>Welcome to the Home Screen!</h1>
-      <button onClick={goToGameScreen}>Go to Game Screen</button>
+    <div className="HomeScreen">
+      <h1>Welcome to Quiz Dodger!</h1>
+      <div className="Button">
+        <button onClick={goToGameScreen}>Play</button>
+      </div>
     </div>
   );
 };
