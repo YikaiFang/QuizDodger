@@ -54,8 +54,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/GameScreen" element={<GameScreen />} />
-            {/* You can add more routes here for other pages */}
-          </Routes>
+
+          {/* You can add more routes here for other pages */}
+        </Routes>
       </Router>
     </div>
   );
