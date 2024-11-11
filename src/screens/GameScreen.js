@@ -47,7 +47,7 @@ function GameScreen({ score, setScore }) {
   };
 
   return (
-    <div>
+    <div className="gameBackground">
       <div className="score-display">Score: {score}</div>
       <Obstacle />
       <h1>Welcome to the Play Screen!</h1>
