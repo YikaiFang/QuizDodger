@@ -1,17 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import QuizModal from '../components/QuizModal';
 import questions from '../components/questions';
 import Player from '../components/Player';
 import Obstacle from '../components/Obstacle';
+import './GameScreen.css';
 
-function GameScreen() {
+function GameScreen({ score, setScore }) {
   const [showQuiz, setShowQuiz] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [previousQuestionIndex, setPreviousQuestionIndex] = useState(null); // Track the last question index
   const navigate = useNavigate();
 
-  // Function to get a truly random question
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setScore((prevScore) => prevScore + 1); // Increment score every second
+    }, 1000);
+
+    return () => clearInterval(timer); // Clear timer on component unmount
+  }, [setScore]);
+
   const getRandomQuestion = () => {
     let randomIndex;
     do {
@@ -30,26 +38,21 @@ function GameScreen() {
 
   const handleAnswer = (selectedOption) => {
     if (selectedOption === currentQuestion.answer) {
-      console.log('Correct Answer!');
+      setScore((prevScore) => prevScore + 20); // Add 20 points for a correct answer
       setShowQuiz(false); // Close the quiz modal after a correct answer
-      navigate('/GameScreen'); // Return to game screen on correct answer
     } else {
-      console.log('Wrong Answer');
       navigate('/LoseScreen'); // Navigate to lose screen on wrong answer
     }
   };
 
   return (
     <div>
+      <div className="score-display">Score: {score}</div>
       <Obstacle />
       <h1>Welcome to the Play Screen!</h1>
-      <p>Here is where the game starts.</p>
       <Player />
-
-      {/* Start Quiz Button */}
       <button onClick={startQuiz}>Trigger Quiz</button>
 
-      {/* Quiz Modal */}
       {showQuiz && currentQuestion && (
         <QuizModal
           question={currentQuestion.question}
@@ -62,5 +65,7 @@ function GameScreen() {
 }
 
 export default GameScreen;
+
+
 
 
