@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import QuizModal from '../components/QuizModal';
 import questions from '../components/questions';
+import Player from '../components/Player';
 
 function GameScreen() {
   const [showQuiz, setShowQuiz] = useState(false);
@@ -39,8 +40,16 @@ function GameScreen() {
 
   return (
     <div>
-      <h1>Game Screen</h1>
+      <h1>Welcome to the Play Screen!</h1>
+      <p>Here is where the game starts.</p>
+      
+      {/* Start Quiz Button */}
       <button onClick={startQuiz}>Trigger Quiz</button>
+
+      {/* Player Component */}
+      <Player />
+
+      {/* Quiz Modal */}
       {showQuiz && currentQuestion && (
         <QuizModal
           question={currentQuestion.question}
@@ -53,3 +62,4 @@ function GameScreen() {
 }
 
 export default GameScreen;
+

@@ -1,13 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function LoseScreen() {
+const LoseScreen = () => {
+  const navigate = useNavigate();
+
+  const goToHomeScreen = () => {
+    navigate('/');
+  };
+
   return (
     <div>
-      <h1>You Lost!</h1>
-      <p>Better luck next time!</p>
-      {/* Optionally, add a button to restart or return to the home screen */}
+      <h1>You LOST!</h1>
+      <p>womp womp</p>
+      <button onClick={goToHomeScreen} style={{ textAlign: 'center', marginTop: 'auto' }} className="HomeButton">
+        Play Again
+      </button>
     </div>
   );
-}
+};
 
 export default LoseScreen;
+
+

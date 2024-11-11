@@ -30,6 +30,7 @@ import GameScreen from './screens/GameScreen';
 import LoseScreen from './screens/LoseScreen';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Player from './components/Player';
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/GameScreen" element={<GameScreen />} />
-          <Route path="/LoseScreen" element={<LoseScreen />} /> {/* Route for Lose Screen */}
+          <Route path="/LoseScreen" element={<LoseScreen />}
         </Routes>
       </Router>
     </div>
