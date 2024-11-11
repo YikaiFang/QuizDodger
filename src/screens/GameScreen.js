@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import QuizModal from '../components/QuizModal';
 import questions from '../components/questions';
 import Player from '../components/Player';
+import Obstacle from '../components/Obstacle';
 
 function GameScreen() {
   const [showQuiz, setShowQuiz] = useState(false);
@@ -40,14 +41,13 @@ function GameScreen() {
 
   return (
     <div>
+      <Obstacle />
       <h1>Welcome to the Play Screen!</h1>
       <p>Here is where the game starts.</p>
-      
+      <Player />
+
       {/* Start Quiz Button */}
       <button onClick={startQuiz}>Trigger Quiz</button>
-
-      {/* Player Component */}
-      <Player />
 
       {/* Quiz Modal */}
       {showQuiz && currentQuestion && (
@@ -62,4 +62,5 @@ function GameScreen() {
 }
 
 export default GameScreen;
+
 

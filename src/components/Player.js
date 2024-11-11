@@ -21,7 +21,7 @@ const Player =() => {
                     }
                     return prevPosition
                 default:
-                    break;
+                    return prevPosition;
     
             }
         });
@@ -40,7 +40,7 @@ const Player =() => {
           style={{
             position: 'absolute',
             left: `${position}px`, // Position is based on the state
-            top: '500px', // Fixed vertical position
+            top: window.innerHeight - 1.5 * spriteSize, // Fixed vertical position
             width: spriteSize,
             height: spriteSize,
             backgroundColor: 'blue', // Player color
