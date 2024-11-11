@@ -2,8 +2,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './HomeScreen.css';
-import rightCapy from './rightCapy.png';
-import sun from './sun.png';
+import rightCapy from './rightCapyO.png';
+import sun from './sunO.png';
 import music from './startMonkey.mp3';
 
 const HomeScreen = ({ resetScore }) => {
