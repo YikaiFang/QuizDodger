@@ -67,8 +67,8 @@ function Obstacle(props) {
             position: 'absolute',
             left: obstacle.x, // Set left position based on obstacle's x value
             top: obstacle.y, // Set top position based on obstacle's y value
-            width: props.spriteSize/1.2, // Set the width of the image based on sprite size
-            height: props.spriteSize/1.2, // Set the height of the image based on sprite size
+            width: props.spriteSize/1.3, // Set the width of the image based on sprite size
+            height: props.spriteSize/1.3, // Set the height of the image based on sprite size
           }}
         />
       ))}

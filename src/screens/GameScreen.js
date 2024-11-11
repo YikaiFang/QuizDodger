@@ -61,8 +61,6 @@ function GameScreen({ score, setScore }) {
       {/* Obstacle with collision triggering startQuiz */}
       <Obstacle position={position} spriteSize={window.innerHeight * 0.15} handleCollision={startQuiz} pause={pause} setPause={setPause} />
 
-      <h1>Welcome to the Play Screen!</h1>
-
       {/* Ground SVG */}
       <svg className="groundFlat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
         <rect width="1440" height="100" fill="#4CAF50"></rect>
