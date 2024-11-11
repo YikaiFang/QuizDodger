@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoseScreen.css'; // Make sure the CSS file is imported
 import deadCapy from './deadCapy.png';
+import music from './loseTimeForgotten.mp3';
 
 const LoseScreen = () => {
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ const LoseScreen = () => {
 
   return (
     <div className="LoseScreen">
+      <audio src={music} autoPlay loop />
       {/* Fade background div */}
       <div className={`fade-background ${isFading ? 'active' : ''}`}>
 
