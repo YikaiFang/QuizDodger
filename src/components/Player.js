@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import rightCapy from './rightCapy.png'
-import leftCapy from './leftCapy.png'
+import rightCapy from './rightCapyO.png'
+import leftCapy from './leftCapyO.png'
 
 
 const Player =(props) => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Obstacle.css';
-import watermelon from './watermelon.png';
+import watermelon from './watermelonO.png';
 
 function Obstacle(props) {
   const [obstacles, setObstacles] = useState([]);
