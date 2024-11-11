@@ -4,21 +4,25 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #007bff, #00c6ff);
+    background: linear-gradient(#007bff, #00c6ff);
     position: relative;
     overflow: hidden;
 }
 
 .PlayButton {
-    border-radius: 30px;
-    border: 3px solid transparent;
+    border-radius: 50px;
+    border: 5px solid transparent;
     padding: 0.6em 1.2em;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 900;
     font-family: inherit;
     background-color: red;
     cursor: pointer;
     transition: border-color 0.25s;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
   }
   .PlayButton:hover {
     border-color: #ffa340;
@@ -28,7 +32,7 @@
   .PlayButton:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
-  
+  /*
   @media (prefers-color-scheme: light) {
     :root {
       color: #213547;
@@ -40,7 +44,7 @@
     .PlayButton {
       background-color: #f9f9f9;
     }
-  }
+  }*/
 
 .ground {
     position: absolute;
