@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className="HomeScreen">
-      <h1>Welcome to Quiz Dodger!</h1>
+      <h1 className="Welcome">Welcome to Quiz Dodger!</h1>
       <div>
         <button onClick={goToGameScreen} style={{textAlign: 'center', marginTop: 'auto'}} className="PlayButton">Play</button>
       </div>
