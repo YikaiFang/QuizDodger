@@ -1,0 +1,8 @@
+.obstacle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%; /* makes it circular */
+    transition: transform 0.1s linear;
+}
