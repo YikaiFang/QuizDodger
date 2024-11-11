@@ -10,6 +10,12 @@
     overflow: hidden;
 }
 
+.Score {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
 .Lost {
     font-size: 5em;
 }

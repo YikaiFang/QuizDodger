@@ -1,72 +1,87 @@
 .HomeScreen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(#007bff, #00c6ff);
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(#007bff, #00c6ff);
+  position: relative;
+  overflow: hidden;
 }
 
 .Welcome {
-    font-size: 5em;
+  font-size: 5em;
 }
 
 .PlayButton {
-    border-radius: 50px;
-    border: 5px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1.5em;
-    font-weight: 900;
-    font-family: inherit;
-    background-color: red;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 10;
-    overflow: hidden;
+  border-radius: 50px;
+  border: 5px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.5em;
+  font-weight: 900;
+  font-family: inherit;
+  background-color: red;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.PlayButton:hover {
+  border-color: #ffa340;
+  color: orange;
+}
+.PlayButton:focus,
+.PlayButton:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
-  .PlayButton:hover {
-    border-color: #ffa340;
-    color: orange;
+  a:hover {
+    color: #747bff;
   }
-  .PlayButton:focus,
-  .PlayButton:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+  .PlayButton {
+    background-color: #f9f9f9;
   }
-  /*
-  @media (prefers-color-scheme: light) {
-    :root {
-      color: #213547;
-      background-color: #ffffff;
-    }
-    a:hover {
-      color: #747bff;
-    }
-    .PlayButton {
-      background-color: #f9f9f9;
-    }
-  }*/
+}*/
 
 .ground {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-  }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
 
 .backgroundCapy {
-    position: absolute; /* Position the image absolutely relative to its container */
-    bottom: 0; /* Position it at the bottom */
-    left: 100px; /* Align it to the left */
-    width: 30%;
-    height: 30%;
-    object-fit: contain;
+  position: absolute; /* Position the image absolutely relative to its container */
+  bottom: 0; /* Position it at the bottom */
+  left: 100px; /* Align it to the left */
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
 }
 
 .sun {
-  position: absolute;
-  
+position: absolute;
+top: 50px; /* Distance from the top of the viewport */
+right: 50px; /* Distance from the right side of the viewport */
+width: 12%;
+height: auto;
+object-fit: contain;
+animation: sun-spin 20s linear infinite; /* Add spin animation here */
+filter: drop-shadow(0 0 5em orange);
+}
+
+@keyframes sun-spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
 }
