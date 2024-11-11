@@ -51,11 +51,14 @@
   }
 }*/
 
-.ground {
-  position: absolute;
+.groundRound {
+  position: fixed; /* Change to fixed to keep it in place */
   bottom: 0;
-  width: 100%;
-  height: auto;
+  left: 0; /* Ensure it's aligned to the left side */
+  width: 100vw;
+  height: auto; /* Adjust as needed */
+  margin: 0; /* Make sure there's no margin */
+  padding: 0; /* Ensure no padding is added */
 }
 
 .backgroundCapy {
