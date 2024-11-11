@@ -5,6 +5,7 @@ import questions from '../components/questions';
 import Player from '../components/Player';
 import Obstacle from '../components/Obstacle';
 import './GameScreen.css';
+import music from './gameSpringField.mp3';
 
 function GameScreen({ score, setScore }) {
   const [showQuiz, setShowQuiz] = useState(false);
@@ -50,6 +51,7 @@ function GameScreen({ score, setScore }) {
       <div className="score-display">Score: {score}</div>
       <Obstacle />
       <h1>Welcome to the Play Screen!</h1>
+      <audio src={music} autoPlay loop />
       <Player />
       <button onClick={startQuiz}>Trigger Quiz</button>
 

@@ -11,6 +11,7 @@
 
 .Welcome {
   font-size: 5em;
+  font-weight: 900;
 }
 
 .PlayButton {
@@ -18,7 +19,7 @@
   border: 5px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1.5em;
-  font-weight: 900;
+  font-weight: 100;
   font-family: inherit;
   background-color: red;
   cursor: pointer;
