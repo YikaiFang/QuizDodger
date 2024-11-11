@@ -1,8 +1,27 @@
+.gameBackground {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(#007bff, #00c6ff);
+  position: relative;
+  overflow: hidden;
+}
+
 .score-display {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 1.5em;
     color: white;
+  }
+  
+  .groundFlat {
+    position: fixed; /* Change to fixed to keep it in place */
+    bottom: 0;
+    left: 0; /* Ensure it's aligned to the left side */
+    width: 100vw;
+    height: auto; /* Adjust as needed */
+    margin: 0; /* Make sure there's no margin */
+    padding: 0; /* Ensure no padding is added */
   }
   

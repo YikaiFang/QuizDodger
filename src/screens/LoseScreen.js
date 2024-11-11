@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoseScreen.css';
-import deadCapy from './deadCapy.png';
+import deadCapy from './deadCapyO.png';
 import music from './loseTimeForgotten.mp3';
 
 const LoseScreen = ({ score }) => {

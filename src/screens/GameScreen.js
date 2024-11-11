@@ -5,6 +5,7 @@ import questions from '../components/questions';
 import Player from '../components/Player';
 import Obstacle from '../components/Obstacle';
 import './GameScreen.css';
+import music from './gameSpringField.mp3';
 
 function GameScreen({ score, setScore }) {
   const [showQuiz, setShowQuiz] = useState(false);
@@ -46,10 +47,15 @@ function GameScreen({ score, setScore }) {
   };
 
   return (
-    <div>
+    <div className="gameBackground">
       <div className="score-display">Score: {score}</div>
       <Obstacle />
       <h1>Welcome to the Play Screen!</h1>
+      <audio src={music} autoPlay loop />
+      <svg className="groundFlat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+      <rect width="1440" height="100" fill="#4CAF50"></rect>
+      </svg>
+
       <Player />
       <button onClick={startQuiz}>Trigger Quiz</button>
 
