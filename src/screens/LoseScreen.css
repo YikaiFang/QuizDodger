@@ -64,3 +64,13 @@
     outline: 4px auto -webkit-focus-ring-color;
   }
   
+  .deadCapy {
+    position: absolute; /* Position the image absolutely relative to its container */
+    bottom: 100px; /* Position it at the bottom */
+    left: 50px;
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+    z-index: 1000;
+    color: white;
+}
