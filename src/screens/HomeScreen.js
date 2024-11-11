@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './HomeScreen.css';
 import rightCapy from './rightCapy.png';
 import sun from './sun.png';
+import music from './startMonkey.mp3';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <div className="HomeScreen">
       <h1 className="Welcome">Welcome to Quiz Dodger!</h1>
+      <audio src={music} autoPlay loop />
       <div>
         <button onClick={goToGameScreen} style={{textAlign: 'center', marginTop: 'auto'}} className="PlayButton">Play</button>
       </div>
