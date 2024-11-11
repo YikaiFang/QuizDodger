@@ -9,7 +9,7 @@ const LoseScreen = () => {
   // Trigger fade effect when component mounts
   useEffect(() => {
     setIsFading(true);
-  }, [navigate]);
+  }, []);
 
   const goToHomeScreen = () => {
     navigate('/');
@@ -31,3 +31,4 @@ const LoseScreen = () => {
 };
 
 export default LoseScreen;
+
