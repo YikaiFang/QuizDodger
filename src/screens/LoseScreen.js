@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoseScreen.css';
 import deadCapy from './deadCapy.png';
+import music from './loseTimeForgotten.mp3';
 
 const LoseScreen = ({ score }) => {
   const navigate = useNavigate();
@@ -17,7 +18,12 @@ const LoseScreen = ({ score }) => {
 
   return (
     <div className="LoseScreen">
-      <div className={`fade-background ${isFading ? 'active' : ''}`}></div>
+      <audio src={music} autoPlay loop />
+      {/* Fade background div */}
+      <div className={`fade-background ${isFading ? 'active' : ''}`}>
+
+      </div>
+      {/* LoseScreen Content */}
       <div className="LoseScreenContent">
         <h2 className="Score">Final Score: {score}</h2>
         <h1 className="Lost">You LOST!</h1>
