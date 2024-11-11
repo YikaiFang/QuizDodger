@@ -1,29 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React from 'react';
 import HomeScreen from './screens/HomeScreen';
 import GameScreen from './screens/GameScreen';
@@ -39,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/GameScreen" element={<GameScreen />} />
-          <Route path="/LoseScreen" element={<LoseScreen />}
+          <Route path="/LoseScreen" element={<LoseScreen />} /> {/* Fixed the closing tag */}
         </Routes>
       </Router>
     </div>
@@ -47,5 +21,6 @@ function App() {
 }
 
 export default App;
+
 
 
